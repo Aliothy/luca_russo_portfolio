@@ -89,3 +89,35 @@ h1 {
 p {
     color: #555;
 }
+
+footer, #contact {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer a, #contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover, #contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center the grid if smaller than container */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
