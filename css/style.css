@@ -98,14 +98,14 @@ footer, #contact {
 }
 
 footer a, #contact a {
-    color: #007BFF;
+    color: #2600ff;
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
 }
 
 footer a:hover, #contact a:hover {
-    color: #0056b3;
+    color: #00b339;
     text-decoration: underline;
 }
 
