@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Russo Luca Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -21,10 +22,10 @@
         <section id="about" class="section active">
         <div class="about-container">
             <div class="text-block">
-                <p> 
+                <h1> 
                     Hello there! I’m Luca, a PhD student in Robotic Engineering at University of Illinois at Chicago, 
                     driven by a passion for robotics and aerospace innovation. </p>
-                <p> 
+                <h1> 
                     My academic journey began with a Bachelor’s in Aerospace Engineering and a Master’s in Mechatronics Engineering at Politecnico di Torino, Italy,
                     where I honed my skills in designing and integrating complex systems. 
                     Today, my research focuses on heterogeneous robotic systems, developing collaboration between UAVs, UGVs and legged
@@ -42,7 +43,7 @@
             </div>
             <div class="image-block">
                 <div class="profile-image">
-                    <img src="./files/images/displacement.png" alt="Luca Russo">
+                    <img src="./files/images/profile.jpeg" alt="Luca Russo">
                 </div>
             </div>
         </div>
@@ -51,20 +52,9 @@
             <div class="portfolio-container">
                 <p>Here is a collection of the works I've done so far.</p>
                 <h2>Publications</h2>
-                <ul>
-                    <li>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0921889021000735" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Russo, L., & Stipanovic, D. M. (2021). 
-                            A distributed control framework for heterogeneous robotic systems. Robotics and Autonomous Systems, 138, 103746.
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://ieeexplore.ieee.org/document/9441317" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Russo, L., & Stipanovic, D. M. (2021). 
-                            Distributed Control of Heterogeneous Robotic Systems with Communication Delays. In 2021 American Control Conference (ACC) (pp. 1-6). IEEE.
-                        </a>
-                    </li>
-                </ul>
+                <div class="image-grid">
+                    <img src="./files/images/microbot.png" alt="Project 1" class="project-image">
+                </div>
                 <h2>Projects</h2>
                 <div class="image-grid">
                     <img src="./files/images/displacement.png" alt="Project 1" class="project-image">
@@ -79,6 +69,7 @@
         </section>
         <section id="resume" class="section">
             <p>View my full resume below or <a href="./files/RESUME_Russo_Luca.pdf" download>download it here</a>.</p>
+            <div id="pdf-viewer"></div>
             <iframe src="./files/RESUME_Russo_Luca.pdf" style="width: 100%; height: 1000px; border: none;"></iframe>
         </section>
         <footer>
@@ -97,6 +88,6 @@
         </footer>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
