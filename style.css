@@ -1,8 +1,10 @@
 html, body {
     height: 100%; 
     width: 100%;
-    margin: 0;    /* Remove default margin from body */
-    padding: 0;   /* Remove default padding from body */
+    margin: 0;    
+    padding: 0;  
+    padding-bottom: 50px;
+    box-sizing: border-box; 
 }
 
 body {
@@ -26,7 +28,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .navbar ul li {
@@ -54,13 +56,19 @@ body {
 
 .section {
     display: none;
+    height: 100vh; 
+    width: 100%;  
+    box-sizing: border-box;
 }
 
 .section.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.about-container {
+.row-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -101,34 +109,114 @@ p {
     color: #555;
 }
 
-.portfolio-container {
+.col-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 20px;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
 }
 
-.image-grid {
+.image-grid3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-    gap: 10px; /* Space between images */
-    padding: 20px;
-    justify-content: center; /* Center the grid if smaller than container */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.image-grid3 div {
+    position: relative; /* Establish a positioning context */
+    width: 100%; /* Full width of the grid cell */
+    padding-top: 100%; /* Aspect ratio trick: Makes the height equal to the width */
+    box-sizing: border-box; /* Include padding and borders in the size */
+}
+
+.image-grid3 div::before {
+    content: ""; /* Empty content for spacing */
+    display: block; /* Acts as the spacer */
+    padding-top: 100%; /* Ensures a perfect square */
+}
+
+.image-grid3 div img {
+    position: absolute; /* Position relative to the parent square */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure image fills the square */
+    height: 100%; /* Ensure image fills the square */
+    object-fit: cover; /* Maintain the aspect ratio and crop excess */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .project-image {
-    width: 100%;
-    height: 0;
-    padding-top:100%;
-    object-fit: cover;
-    border-radius: 5px;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 300px;
+    padding: 10%;
+    border-radius: 20%;
+}
+
+.image-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10%; 
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.image-grid2 div {
+    position: relative; /* Establish a positioning context */
+    width: 100%; /* Full width of the grid cell */
+    padding-top: 100%; /* Aspect ratio trick: Makes the height equal to the width */
+    box-sizing: border-box; /* Include padding and borders in the size */
+}
+
+.image-grid2 div::before {
+    content: ""; /* Empty content for spacing */
+    display: block; /* Acts as the spacer */
+    padding-top: 100%; /* Ensures a perfect square */
+}
+
+.image-grid2 div img {
+    position: absolute; /* Position relative to the parent square */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure image fills the square */
+    height: 100%; /* Ensure image fills the square */
+    object-fit: cover; /* Maintain the aspect ratio and crop excess */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.portfolio-text-block {
+    background-color: #f8f9fa;
+    margin: 10px;
+    font-size:20px;
+    text-align: left;
+}
+
+iframe {
+    width: 1000px;
+    height: calc(100vh - 40px); 
+    border: none;
 }
 
 footer, #contact {
     background-color: #f8f9fa;
-    padding: 20px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
     border-top: 1px solid #ddd;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 footer a, #contact a {
@@ -160,5 +248,11 @@ footer a:hover, #contact a:hover {
 
     .image-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    }
+
+    iframe {
+        width: 700px;
+        height: calc(100vh - 40px); 
+        border: none;
     }
 }
