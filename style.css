@@ -193,7 +193,7 @@ p {
 }
 
 .portfolio-text-block {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     margin: 10px;
     font-size:20px;
     text-align: left;
@@ -232,7 +232,7 @@ footer a:hover, #contact a:hover {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .row-container {
         display: block; /* Stack the text and images vertically */
     }
 
@@ -251,7 +251,7 @@ footer a:hover, #contact a:hover {
     }
 
     iframe {
-        width: 700px;
+        width: 80%;
         height: calc(100vh - 40px); 
         border: none;
     }
