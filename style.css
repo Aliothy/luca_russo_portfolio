@@ -21,6 +21,8 @@ body {
     height: 2%;
     padding: 10px 0;
     position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -56,9 +58,6 @@ body {
 
 .section {
     display: none;
-    height: 100vh; 
-    width: 100%;  
-    box-sizing: border-box;
 }
 
 .section.active {
@@ -66,6 +65,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    padding-bottom: 2%;
 }
 
 .row-container {
@@ -119,45 +119,87 @@ p {
     flex-grow: 1;
 }
 
-.image-grid3 {
+.image-grid4 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
     width: 100%;
     align-items: center;
     box-sizing: border-box;
 }
 
-.image-grid3 div {
+.image-grid4 div {
     position: relative; /* Establish a positioning context */
-    width: 100%; /* Full width of the grid cell */
+    width: 20vw; /* Full width of the grid cell */
+    height: 5vw; /* Full height of the grid cell */
     padding-top: 100%; /* Aspect ratio trick: Makes the height equal to the width */
     box-sizing: border-box; /* Include padding and borders in the size */
 }
 
-.image-grid3 div::before {
+.image-grid4 div::before {
     content: ""; /* Empty content for spacing */
     display: block; /* Acts as the spacer */
     padding-top: 100%; /* Ensures a perfect square */
 }
 
-.image-grid3 div img {
+.image-grid4 div img {
     position: absolute; /* Position relative to the parent square */
     top: 0;
     left: 0;
     width: 100%; /* Ensure image fills the square */
     height: 100%; /* Ensure image fills the square */
     object-fit: cover; /* Maintain the aspect ratio and crop excess */
+    border-radius: 20px; /* Optional: Add rounded corners */
+}
+
+.project {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Align text in the center */
+    width: 100%; /* Full width of the container */
+    padding-top: 100%; /* Aspect ratio trick: Makes the height equal to the width */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Include padding and borders in the size */
+}
+
+.project div img {
     border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .project-image {
     border-radius: 20px;
-    max-width: 100%;
-    max-height: 300px;
-    padding: 10%;
-    border-radius: 20%;
+    width: 100%;  /* Make sure it's responsive */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    /* max-width: 300px; Limit width */
+    /* max-height: 300px; Limit height to 300px for square appearance */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
+
+.project-image:hover {
+    transform: scale(1.05); /* Add hover effect */
+}
+
+.project-text {
+    display: none; /* Initially hide the text */
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Background for readability */
+    color: white; /* White text */
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 90%; /* Text block width */
+}
+
+.project:hover .project-text {
+    display: block; /* Show text on hover */
+}
+
+
 
 .image-grid2 {
     display: grid;
