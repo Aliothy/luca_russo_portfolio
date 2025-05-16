@@ -2,10 +2,10 @@
 # Luca Russo – Portfolio Build Checklist
 
 ## ✅ STRUCTURE
-- [ ] Set up project folder and GitHub repo  
-- [ ] Create `index.html`, `style.css`, `script.js`  
-- [ ] Add folder: `/images` (profile, projects, team logos)  
-- [ ] Add folder: `/files` (PDF resume, publication files if needed)
+- [✅] Set up project folder and GitHub repo  
+- [✅] Create `index.html`, `style.css`, `script.js`  
+- [✅] Add folder: `/images` (profile, projects, team logos)  
+- [✅] Add folder: `/files` (PDF resume, publication files if needed)
 
 ## ✅ ABOUT ME SECTION
 - [ ] Add academic background (UIC, Politecnico)  

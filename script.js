@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function toggleText(textId) {
-    var textElement = document.getElementById(textId);
-    if (textElement.style.display === "block") {
-        textElement.style.display = "none";
-    } else {
-        textElement.style.display = "block";
-    }
-}
+// function toggleText(textId) {
+//     var textElement = document.getElementById(textId);
+//     if (textElement.style.display === "block") {
+//         textElement.style.display = "none";
+//     } else {
+//         textElement.style.display = "block";
+//     }
+// }
 
 
 // // JavaScript to Handle Modal
@@ -50,14 +50,14 @@ function toggleText(textId) {
     });
   
     // Close the modal when the close button is clicked
-    closeModal.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+    // closeModal.addEventListener('click', () => {
+    //   modal.style.display = 'none';
+    // });
   
     // Close the modal when clicking outside of the modal content
-    window.addEventListener('click', event => {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
-    });
-  });
+    // window.addEventListener('click', event => {
+    //   if (event.target === modal) {
+    //     modal.style.display = 'none';
+    //   }
+    // });
+  // });
