@@ -20,15 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// function toggleText(textId) {
-//     var textElement = document.getElementById(textId);
-//     if (textElement.style.display === "block") {
-//         textElement.style.display = "none";
-//     } else {
-//         textElement.style.display = "block";
-//     }
-// }
-
 
 // // JavaScript to Handle Modal
 // document.addEventListener('DOMContentLoaded', () => {

@@ -23,77 +23,131 @@
 
     <div id="content">
         <section id="about" class="section active">
-        <div class="container row-container">
-            <div class="text-block">
-                <!-- <img src="./images/profile.jpeg" class="hero-image" alt="Luca Russo"> -->
-                <h1>Hello there!</h1>
-                <p><strong>I’m Luca Russo</strong>, a PhD student in Robotics Engineering at the University of Illinois at Chicago. I conduct research in the <a href="https://pab47.github.io/" target="_blank">Robotics and Motion Lab</a>, focusing on UAV-UGV coordination, simulation, and full-body torque control for legged robots.</p>
-                <p>I hold a BSc in Aerospace Engineering and an MSc in Mechatronics from Politecnico di Torino. My work blends control theory, multi-agent systems, and real-world robotics platforms.</p>
-                <p>I’ve been a competitive wrestler since age 5 — a discipline that shaped how I approach challenges, persistence, and continuous growth in both sport and engineering.</p>
-                <a href="#about-detail" class="scroll-down">Learn more ↓</a>
-            </div>
-            <!-- 
-            <h1>Hello, there!</h1>
-                <div class="image-block">
-                <div class="profile-image">
-                    <img src="./files/images/profile.jpeg" alt="Luca Russo">
+        <!-- first screen -->
+        <div class="about-initial">
+            <div class = "row-container">
+                <div class="text-block">
+                    <h1>Hello there!<span class="wave">👋</span></h1>
+                    <p><strong>I’m Luca Russo</strong>, a robotics enthusiast with a passion for making machines move intelligently and autonomously. From aerial drones to legged robots, I enjoy tackling complex challenges where control, planning, and autonomy meet.</p>
+                    <a href="#about-detail" class="scroll-down">Learn more about me ↓</a>
                 </div>
-            </div> -->
+                <div class="image-block">
+                    <div class="profile-image">
+                        <img src="./files/images/profile.jpeg" alt="Luca Russo">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="about-detail" id="about-detail">
+            <div class="block" id="education">
+                <div class="text">
+                    <p>My academic journey began with a Bachelor’s in Aerospace Engineering and a Master’s in Mechatronics Engineering at Politecnico di Torino, Italy, followed by a Master's in Electrical and Computer Engineering at the University of Illinois at Chicago. These experiences allowed me to explore the intersection of mechanics, electronics, and control, honing my skills in designing and integrating complex systems.</p>
+                    <p>Driven by a growing fascination for autonomy and intelligent machines, I transitioned my focus toward robotics and advanced control systems. My studies not only provided me with a solid technical foundation but also instilled in me a problem-solving mindset and a passion for tackling challenging, interdisciplinary projects that push the boundaries of what machines can do.</p>
+                    <div class="logos">
+                        <a href="https://www.polito.it/" target="_blank">
+                            <img src="files/logos/polito.png" alt="Politecnico di Torino" />
+                        </a>
+                        <a href="https://www.uic.edu/" target="_blank">
+                            <img src="files/logos/UIC.png" alt="University of Illinois at Chicago" />
+                        </a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./files/images/Laurea.jpeg" alt="Education">
+                </div>
+            </div>
+            <div class="block" id="research">
+                <div class="image">
+                    <img src="./files/images/profile.jpeg" alt="Robotics passion">
+                </div>
+                <div class="text">
+                    <p>Currently, my research focuses on the development of heterogeneous robotic systems capable of collaborating in complex and dynamic environments. In collaboration with the <a href="https://www.arl.army.mil/" target="_blank"> U.S. Army Research Laboratory</a><img src="./files/images/profile.jpeg" alt="ARL" style="height:20px; vertical-align:middle; margin-left: 5px;"> and within the <a href="https://pab47.github.io/" target="_blank">Robotics and Motion Lab</a> at the University of Illinois at Chicago, I work on UAV-UGV coordination strategies, routing algorithms, and physics-based simulation of multi-robot scenarios.</p>
+                    <p>My work also extends to full-body torque control for legged robots, where I aim to enable agile and robust behaviors in challenging terrains. I am particularly interested in bridging high-level planning with low-level control, ensuring that teams of aerial, ground, and legged robots can operate seamlessly together to tackle real-world missions where adaptability and autonomy are key.</p>
+                </div>
+            </div>
+            <div class="block" id="teams">
+                <div class="text">
+                    <p>Throughout my academic journey, I have been actively involved in student teams that allowed me to apply my technical skills in real-world, high-pressure environments. At Politecnico di Torino, I was part of the ICARUS Team, where we designed and built a remote-controlled aircraft for the Air Cargo Challenge 2022. My role focused on structural analysis and FEM simulations, ensuring the aircraft met strict performance and safety requirements for the competition.</p>
+                    <p>Later, I joined the EDT Team at the University of Illinois at Chicago, where I served as the leader of the Computer Science division for the NASA Lunabotics Challenge 2024. Together, we developed an autonomous lunar mining robot that placed 5th in the Automation category among international competitors. These experiences not only sharpened my technical and leadership skills but also strengthened my passion for collaborative, multidisciplinary engineering projects where innovation and teamwork are key to success.</p>
+                    <div class="logos">
+                        <a href="https://icarus.polito.it/" target="_blank">
+                            <img src="files/logos/ICARUS.jpeg" alt="ICARUS" />
+                        </a>
+                        <a href="https://akamodell-muenchen.de/en/air-cargo-challenge-2022/" target="_blank">
+                            <img src="files/logos/ACC.jpeg" alt="Air Cargo Challenge" />
+                        </a>
+                        <a href="https://chicagoedt.org/" target="_blank">
+                            <img src="files/logos/EDT.png" alt="EDT" />
+                        </a>
+                        <a href="https://engineering.uic.edu/news-stories/uic-students-impress-judges-at-nasa-lunabotics-competition/" target="_blank">
+                            <img src="files/logos/NASA_Lunabotics_2024.png" alt="Lunabotics" />
+                        </a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./files/images/Lunabotics2024.jpg" alt="Robotics passion">
+                </div>
+            </div>
+
+            <div class="block" id="passion">
+                <div class="image">
+                    <img src="./files/images/Lotta.jpeg" alt="Passion">
+                </div>
+                <div class="text">
+                    <p>Beyond robotics, I have been a lifelong athlete, dedicating over 15 years to wrestling at both national and international levels. I was proud to represent Italy as part of the National Team and to win multiple Italian Championships throughout my career. Wrestling has taught me discipline, resilience, and strategic thinking—qualities that deeply influence how I approach engineering challenges and research problems today.</p>
+                    <p>Outside the lab and the mat, I enjoy hiking, reading, and exploring new disciplines that challenge both my body and mind. I believe that stepping outside of my comfort zone—whether in sports, research, or life—is the best way to grow and keep pushing my limits.</p>
+                    <div class="logos">
+                        <a href="https://www.fijlkam.it/" target="_blank">
+                            <img src="files/logos/FIJLKAM.png" alt="FIJLKAM" />
+                        </a>
+                        <a href="https://www.custorino.it/" target="_blank">
+                            <img src="files/logos/CUS.png" alt="CUS Torino" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         </section>
         <section id="portfolio" class="section">
-            <div class="portfolio-text-block">
-                <p>Here is a collection of the works I've done so far.</p>
-                <h2>Publications</h2>
-            </div>
-            <div class="image-grid4">
-                <div class="project">
-                    <img src="./files/images/microbot.png" alt="Publication 1" class="project-image" onclick="toggleText('project1-text')">
+        <div class="projects-page">
+            
+            <div class="projects-header">
+                <div class="text">
+                <h2>Projects</h2>
+                <p>Explore my projects, where I apply my skills in robotics, control systems, and software development to create innovative solutions.</p>
                 </div>
             </div>
-            <div id="project1-text" class="project-text">
-                <h3>Publication 1</h3>
-                <h1> 
-                    Hello there! I’m Luca, a PhD student in Robotic Engineering at University of Illinois at Chicago, 
-                    driven by a passion for robotics and aerospace innovation. </p>
-                <h1> 
-                    My academic journey began with a Bachelor’s in Aerospace Engineering and a Master’s in Mechatronics Engineering at Politecnico di Torino, Italy,
-                    where I honed my skills in designing and integrating complex systems. 
-                    Today, my research focuses on heterogeneous robotic systems, developing collaboration between UAVs, UGVs and legged
-                    robots to tackle real-world challenges.
-                </p>
-                <p>
-                    Beyond my work in robotics, I’m also a lifelong athlete, having wrestled since the age of 5. 
-                    Wrestling has instilled in me a strong sense of discipline, perseverance, and strategic thinking—qualities 
-                    that deeply influence my approach to engineering challenges.
-                </p>
-                <p>
-                    Whether I’m designing a multi-robotic system or competing on the mat, I strive for precision, adaptability, and excellence. 
-                    Feel free to explore my projects, connect with me, or join me on this exciting journey into the future of robotics.
-                </p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Robotics</button>
+                <button class="filter-btn">Simulation</button>
+                <button class="filter-btn">Software</button>
             </div>
-            <div class="portfolio-text-block">
-            <h2>Projects</h2>
-            </div>
-            <div class="image-grid4">
-                <div class="project">
-                    <img src="./files/images/microbot.png" alt="Publication 1" class="project-image" onclick="toggleText('project1-text')">
+
+            <div class="projects-grid">
+                <div class="project-card">
+                <img src="./files/images/microbot.png" alt="Project Title">
+                <h3>Project Title</h3>
+                <p>Short project description to explain the goal and context.</p>
+                <div class="tags">
+                    <span>ROS</span>
+                    <span>PX4</span>
                 </div>
-                <div class="project">
-                    <img src="./files/images/microbot.png" alt="Publication 1" class="project-image" onclick="toggleText('project1-text')">
                 </div>
-                <div class="project">
-                    <img src="./files/images/microbot.png" alt="Publication 1" class="project-image" onclick="toggleText('project1-text')">
-                </div>
+                <div class="project-card">Project 2</div>
+                <div class="project-card">Project 3</div>
+                <div class="project-card">Project 4</div>
+                <div class="project-card">Project 5</div>
+                <div class="project-card">Project 6</div>
             </div>
-            <div class="portfolio-text-block">
-                <h2>Student Teams</h2>
-            </div>
-            <div class="image-grid2">
-                <img src="./files/images/Lunabotics.png" alt="Lunabotics" class="project-image">
-                <img src="./files/images/ICARUS.jpg" alt="ICARUS" class="project-image">
-            </div>
+
+        </div>
         </section>
+        <section id="publications" class="section">
+        </section>
+
         <section id="resume" class="section">
             <div class="col-container">
                 <p>View my full resume below or <a href="./files/RESUME_Russo_Luca.pdf" download>download it here</a>.</p>
@@ -102,16 +156,16 @@
             </div>
         </section>
         <footer>
-            <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <a href="https://github.com/Aliothy" target="_blank">
                 <i class="fab fa-github"></i> Github
             </a>
             <a href=mailto:luca.russo2000@gmail.com>
                 <i class="fab fa-google"></i> luca.russo2000@gmail.com
             </a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <a target="_blank">
                 <i class="fas fa-phone"></i> +1 (872) 279 9425
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+            <a href="https://www.linkedin.com/in/lucarusso2000/" target="_blank">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
         </footer>

@@ -8,11 +8,12 @@
 - [✅] Add folder: `/files` (PDF resume, publication files if needed)
 
 ## ✅ ABOUT ME SECTION
-- [ ] Add academic background (UIC, Politecnico)  
-- [ ] Add research focus (UAV, UGV, legged systems)  
-- [ ] Add wrestling background  
-- [ ] Add lab affiliation + advisor (linked)  
-- [ ] Add profile image
+- [✅] Add initial page 
+- [✅] Add academic background (UIC, Politecnico)  
+- [✅] Add research focus (UAV, UGV, legged systems)  
+- [✅] Add wrestling background  
+- [✅] Add lab affiliation + advisor (linked)  
+- [] Add profile image
 
 ## ✅ PROJECTS SECTION
 - [ ] Grid layout (3-column on desktop, responsive)  
@@ -37,11 +38,11 @@
 - [ ] Link to team site or paper if relevant
 
 ## ✅ CONTACT FOOTER
-- [ ] GitHub (icon + link)  
-- [ ] Email (mailto)  
-- [ ] Phone number  
-- [ ] LinkedIn (icon + link)  
-- [ ] (Optional) Add contact form or calendar link
+- [✅] GitHub (icon + link)  
+- [✅] Email (mailto)  
+- [✅] Phone number  
+- [✅] LinkedIn (icon + link)  
+- [✅] (Optional) Add contact form or calendar link
 
 ## ✅ STYLE & DEPLOYMENT
 - [ ] Responsive design with CSS media queries  
