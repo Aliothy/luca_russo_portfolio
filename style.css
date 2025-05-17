@@ -454,6 +454,18 @@ footer a:hover, #contact a:hover {
     grid-template-columns: 1fr;
     }
 
+    .project-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    }
+
+    .project-card p {
+    font-size: 0.9rem;
+    margin: 0 1rem;
+    flex-grow: 1;
+    color: #555;
+    }
+
 }
 
 /* keyframes */
