@@ -1,54 +1,39 @@
-// change the section
 document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".nav-link");
-    const sections = document.querySelectorAll(".section");
+  // Navigation: event delegation
+  document.body.addEventListener("click", (e) => {
+    const link = e.target.closest(".nav-link");
+    if (link) {
+      e.preventDefault();
+      const targetSection = link.getAttribute("data-section");
+      if (!targetSection) return;
 
-    links.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
+      document.querySelectorAll(".section.active").forEach(section =>
+        section.classList.remove("active")
+      );
+      const target = document.getElementById(targetSection);
+      if (target) target.classList.add("active");
+    }
+  });
 
-            // Get the section ID from the data-section attribute
-            const targetSection = link.getAttribute("data-section");
+  // Project filter: event delegation
+  document.body.addEventListener("click", (e) => {
+    const button = e.target.closest(".filter-btn");
+    if (button) {
+      const filter = button.getAttribute("data-filter");
+      if (!filter) return;
 
-            // Remove 'active' class from all sections
-            sections.forEach(section => section.classList.remove("active"));
+      document.querySelectorAll(".filter-btn.active").forEach(btn =>
+        btn.classList.remove("active")
+      );
+      button.classList.add("active");
 
-            // Add 'active' class to the target section
-            document.getElementById(targetSection).classList.add("active");
-        });
-    });
-});
-
-
-
-// // JavaScript to Handle Modal
-// document.addEventListener('DOMContentLoaded', () => {
-//     const modalDescription = document.getElementById('modal content');
-//     const closeModal = document.getElementById('close modal');
-  
-    // Add click event to all clickable images
-    document.querySelectorAll('.clickable').forEach(image => {
-      image.addEventListener('click', () => {
-        const src = image.getAttribute('src');
-        const description = image.getAttribute('data-description');
-  
-        modalImage.src = src;
-        modalDescription.textContent = description;
-  
-        // Show the modal
-        modal.style.display = 'block';
+      document.querySelectorAll(".project-card").forEach(card => {
+        card.style.display =
+          filter === "all" || card.classList.contains(filter) ? "flex" : "none";
       });
-    });
+    }
+  });
+
+
+
   
-    // Close the modal when the close button is clicked
-    // closeModal.addEventListener('click', () => {
-    //   modal.style.display = 'none';
-    // });
-  
-    // Close the modal when clicking outside of the modal content
-    // window.addEventListener('click', event => {
-    //   if (event.target === modal) {
-    //     modal.style.display = 'none';
-    //   }
-    // });
-  // });

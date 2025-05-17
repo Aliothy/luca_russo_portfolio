@@ -57,12 +57,17 @@
                 </div>
             </div>
             <div class="block" id="research">
-                <div class="image">
-                    <img src="./files/images/profile.jpeg" alt="Robotics passion">
+                <div class="image" style="position: relative;">
+                    <img src="files/images/drone.jpg" alt="Drone background" style="width:100%; height:auto;">
                 </div>
                 <div class="text">
-                    <p>Currently, my research focuses on the development of heterogeneous robotic systems capable of collaborating in complex and dynamic environments. In collaboration with the <a href="https://www.arl.army.mil/" target="_blank"> U.S. Army Research Laboratory</a><img src="./files/images/profile.jpeg" alt="ARL" style="height:20px; vertical-align:middle; margin-left: 5px;"> and within the <a href="https://pab47.github.io/" target="_blank">Robotics and Motion Lab</a> at the University of Illinois at Chicago, I work on UAV-UGV coordination strategies, routing algorithms, and physics-based simulation of multi-robot scenarios.</p>
+                    <p>Currently, my research focuses on the development of heterogeneous robotic systems capable of collaborating in complex and dynamic environments. In collaboration with the <a href="https://www.arl.army.mil/" target="_blank"> U.S. Army Research Laboratory</a> and within the <a href="https://pab47.github.io/" target="_blank">Robotics and Motion Lab</a> at the University of Illinois at Chicago, I work on UAV-UGV coordination strategies, routing algorithms, and physics-based simulation of multi-robot scenarios.</p>
                     <p>My work also extends to full-body torque control for legged robots, where I aim to enable agile and robust behaviors in challenging terrains. I am particularly interested in bridging high-level planning with low-level control, ensuring that teams of aerial, ground, and legged robots can operate seamlessly together to tackle real-world missions where adaptability and autonomy are key.</p>
+                    <div class="logos">
+                        <a href="https://arl.devcom.army.mil/" target="_blank">
+                            <img src="files/logos/ARL.png" alt="ARL" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="block" id="teams">
@@ -120,27 +125,65 @@
             </div>
 
             <div class="filter-buttons">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Robotics</button>
-                <button class="filter-btn">Simulation</button>
-                <button class="filter-btn">Software</button>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="space">Space</button>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card">
-                <img src="./files/images/microbot.png" alt="Project Title">
-                <h3>Project Title</h3>
-                <p>Short project description to explain the goal and context.</p>
+                <div class="project-card robotics">
+                    <img src="files/images/G1.png" alt="G1 Robot Control">
+                    <h3>G1 Robot Control</h3>
+                    <p>Developed a C++ torque control algorithm for the G1 humanoid robot in MuJoCo, achieving stable standing. Walking in 2D is under development.</p>
+                    <div class="tags">
+                    <span>C++</span><span>MuJoCo</span><span>Torque Control</span>
+                    </div>
+                </div>
+
+                <div class="project-card robotics">
+                    <img src="files/images/WidowX250.png" alt="WidowX 250S Manipulation">
+                    <h3>WidowX 250S Manipulation</h3>
+                    <p>Model-based control in Python for object pick-and-place with obstacle avoidance using the WidowX 250S in MuJoCo.</p>
+                    <div class="tags">
+                    <span>Python</span><span>MuJoCo</span><span>Obstacle Avoidance</span>
+                    </div>
+                </div>
+
+                <div class="project-card robotics">
+                    <img src="files/images/microbot.png" alt="RL Locomotion mClari">
+                    <h3>RL Locomotion for mClari</h3>
+                    <p>Used reinforcement learning to enable the mClari robot to walk across varying terrains in simulation.</p>
+                    <div class="tags">
+                    <span>Python</span><span>RL</span><span>MuJoCo</span>
+                    </div>
+                </div>
+
+                <div class="project-card robotics">
+                    <img src="files/images/UAV-UGV.png" alt="Drone Landing on UGV">
+                    <h3>Drone Landing on UGV</h3>
+                    <p>Designed and coded a drone landing algorithm using ArUco marker detection in C++, enabling UAV-UGV cooperation.</p>
+                    <div class="tags">
+                    <span>C++</span><span>Aruco</span><span>UAV-UGV</span>
+                    </div>
+                </div>
+
+                <div class="project-card space">
+                    <img src="files/images/Poseidon.jpg" alt="Lunabotics Challenge Control Logic">
+                    <h3>Lunabotics Challenge Logic</h3>
+                    <p>Developed the entire control logic in Python for the NASA Lunabotics Challenge, achieving 5th place in automation.</p>
+                    <div class="tags">
+                    <span>Python</span><span>Automation</span><span>Robotics Challenge</span>
+                    </div>
+                </div>
+
+                <div class="project-card space">
+                <img src="files/images/Landsat7.jpg" alt="Satellite Pose Estimation">
+                <h3>Satellite Pose Estimation</h3>
+                <p>Estimated the Landsat 7 satellite pose using an Extended Kalman Filter on real orbital data, with 3D visualization and error analysis.</p>
                 <div class="tags">
-                    <span>ROS</span>
-                    <span>PX4</span>
+                    <span>EKF</span><span>Python</span><span>Orbital Mechanics</span>
                 </div>
                 </div>
-                <div class="project-card">Project 2</div>
-                <div class="project-card">Project 3</div>
-                <div class="project-card">Project 4</div>
-                <div class="project-card">Project 5</div>
-                <div class="project-card">Project 6</div>
             </div>
 
         </div>
@@ -171,6 +214,8 @@
         </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
