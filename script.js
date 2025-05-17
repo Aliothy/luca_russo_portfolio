@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Navigation: event delegation
   document.body.addEventListener("click", (e) => {
-    const link = e.target.closest(".nav-link");
+    const link = e.target.closest(".nav-link"); 
     if (link) {
       e.preventDefault();
       const targetSection = link.getAttribute("data-section");
@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       const target = document.getElementById(targetSection);
       if (target) target.classList.add("active");
+
+      if (target) target.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   });
 
@@ -33,6 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+});
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 
 
 

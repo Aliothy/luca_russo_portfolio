@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Russo Luca Portfolio</title>
     <link rel="stylesheet" href="./style.css">
@@ -13,7 +13,7 @@
     <nav class="navbar">
         <div class = "navbar-container">
             <ul>
-                <li><a href="#" class="nav-link" data-section="about">About Me</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
                 <li><a href="#" class="nav-link" data-section="portfolio">Projects</a></li>
                 <li><a href="#" class="nav-link" data-section="publications">Publications</a></li>
                 <li><a href="#" class="nav-link" data-section="resume">Resume</a></li>
@@ -58,7 +58,7 @@
             </div>
             <div class="block" id="research">
                 <div class="image" style="position: relative;">
-                    <img src="files/images/drone.jpg" alt="Drone background" style="width:100%; height:auto;">
+                    <img src="files/images/drone.png" alt="Drone background" style="width:100%; height:auto;">
                 </div>
                 <div class="text">
                     <p>Currently, my research focuses on the development of heterogeneous robotic systems capable of collaborating in complex and dynamic environments. In collaboration with the <a href="https://www.arl.army.mil/" target="_blank"> U.S. Army Research Laboratory</a> and within the <a href="https://pab47.github.io/" target="_blank">Robotics and Motion Lab</a> at the University of Illinois at Chicago, I work on UAV-UGV coordination strategies, routing algorithms, and physics-based simulation of multi-robot scenarios.</p>
@@ -119,8 +119,7 @@
             
             <div class="projects-header">
                 <div class="text">
-                <h2>Projects</h2>
-                <p>Explore my projects, where I apply my skills in robotics, control systems, and software development to create innovative solutions.</p>
+                <p style="font-size: x-large;">Explore my projects, where I apply my skills in robotics, control systems, and software development to create innovative solutions.</p>
                 </div>
             </div>
 
@@ -131,21 +130,26 @@
             </div>
 
             <div class="projects-grid">
+                
                 <div class="project-card robotics">
                     <img src="files/images/G1.png" alt="G1 Robot Control">
                     <h3>G1 Robot Control</h3>
                     <p>Developed a C++ torque control algorithm for the G1 humanoid robot in MuJoCo, achieving stable standing. Walking in 2D is under development.</p>
                     <div class="tags">
-                    <span>C++</span><span>MuJoCo</span><span>Torque Control</span>
+                    <img src="files/logos/Cpp.jpg" alt="Cpp Logo" class="logo">
+                    <img src="files/logos/MuJoCo.png" alt="MuJoCo Logo" class="logo">
+                    <a href="https://www.youtube.com/watch?v=_jQQnvEsraw" target="_blank" class="know_more">See more..</a>
                     </div>
                 </div>
-
+                
+                
                 <div class="project-card robotics">
                     <img src="files/images/WidowX250.png" alt="WidowX 250S Manipulation">
                     <h3>WidowX 250S Manipulation</h3>
                     <p>Model-based control in Python for object pick-and-place with obstacle avoidance using the WidowX 250S in MuJoCo.</p>
                     <div class="tags">
-                    <span>Python</span><span>MuJoCo</span><span>Obstacle Avoidance</span>
+                    <img src="files/logos/python.png" alt="Python Logo" class="logo">
+                    <img src="files/logos/MuJoCo.png" alt="MuJoCo Logo" class="logo">
                     </div>
                 </div>
 
@@ -154,7 +158,9 @@
                     <h3>RL Locomotion for mClari</h3>
                     <p>Used reinforcement learning to enable the mClari robot to walk across varying terrains in simulation.</p>
                     <div class="tags">
-                    <span>Python</span><span>RL</span><span>MuJoCo</span>
+                    <img src="files/logos/python.png" alt="Python Logo" class="logo">
+                    <img src="files/logos/MuJoCo.png" alt="MuJoCo Logo" class="logo">
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10927506" target="_blank" class="know_more">See more..</a>
                     </div>
                 </div>
 
@@ -163,16 +169,19 @@
                     <h3>Drone Landing on UGV</h3>
                     <p>Designed and coded a drone landing algorithm using ArUco marker detection in C++, enabling UAV-UGV cooperation.</p>
                     <div class="tags">
-                    <span>C++</span><span>Aruco</span><span>UAV-UGV</span>
+                    <img src="files/logos/Cpp.jpg" alt="Cpp Logo" class="logo">
+                    <img src="files/logos/ROS2.png" alt="ROS2 Logo" class="logo">
                     </div>
                 </div>
 
                 <div class="project-card space">
-                    <img src="files/images/Poseidon.jpg" alt="Lunabotics Challenge Control Logic">
-                    <h3>Lunabotics Challenge Logic</h3>
+                    <img src="files/images/Poseidon.jpg" alt="Lunabotics Challenge ">
+                    <h3>Lunabotics Challenge </h3>
                     <p>Developed the entire control logic in Python for the NASA Lunabotics Challenge, achieving 5th place in automation.</p>
                     <div class="tags">
-                    <span>Python</span><span>Automation</span><span>Robotics Challenge</span>
+                    <img src="files/logos/python.png" alt="Python Logo" class="logo">
+                    <img src="files/logos/ROS2.png" alt="ROS2 Logo" class="logo">
+                    <a href="https://x.com/DrPhiltill/status/1789799038633550293" target="_blank" class="know_more">See more..</a>
                     </div>
                 </div>
 
@@ -181,7 +190,9 @@
                 <h3>Satellite Pose Estimation</h3>
                 <p>Estimated the Landsat 7 satellite pose using an Extended Kalman Filter on real orbital data, with 3D visualization and error analysis.</p>
                 <div class="tags">
-                    <span>EKF</span><span>Python</span><span>Orbital Mechanics</span>
+                    <img src="files/logos/python.png" alt="Python Logo" class="logo">
+                    <img src="files/logos/GoogleEarth.png" alt="GoogleEarth Logo" class="logo">
+                    <a href="https://github.com/Aliothy/Landsat7" target="_blank" class="know_more">See more..</a>
                 </div>
                 </div>
             </div>
@@ -189,13 +200,33 @@
         </div>
         </section>
         <section id="publications" class="section">
+
+            <div class="publication">
+            <h2>Publications</h2>
+
+            <h3>2025</h3>
+            <ol>
+            <li>
+                L. Russo, Md S. Mondal, S. Ramasamy, J. D. Humann, J. M. Dotterweich, P. A. Bhounsule, "Precision Auto-Landing of an Aerial Vehicle on a Moving Ground Vehicle: A Modular ROS2 Approach", <i>accepted for publication at</i> <em> ASME IDETC-CIE</em>, 2025.
+            </li>
+            </ol>
+
+            <h3>2024</h3>
+            <ol>
+            <li>
+                L. Russo, E. Chandler, K. Jayaram, A. R. Trivedi, "Dynamic Resonance Frequency Identification for Economic Insect-Scale Legged Robot Locomotion," <em>IEEE, 2024 6th International Conference on Control and Robotics (ICCR)</em>,  pp. 142-146, 2024. [<a href="./files/Dynamic_Resonance_Frequency_Identification_for_Economic_Insect-Scale_Legged_Robot_Locomotion.pdf" target="_blank">PDF</a>] [<a href="https://ieeexplore.ieee.org/document/10927506" target="_blank">DOI</a>]
+            </li>
+            </ol>
+            </div>
+
         </section>
 
         <section id="resume" class="section">
-            <div class="col-container">
+            <div class="resume">
                 <p>View my full resume below or <a href="./files/RESUME_Russo_Luca.pdf" download>download it here</a>.</p>
-                <div id="pdf-viewer"></div>
-                <iframe src="./files/RESUME_Russo_Luca.pdf"></iframe>
+                <div class="pdf-container">
+                    <iframe src="./files/RESUME_Russo_Luca.pdf"></iframe>
+                </div>
             </div>
         </section>
         <footer>
